@@ -6,7 +6,8 @@ function VacationRental({properties}) {
 
   return (
     <>
-      <div >
+      <div className={styles.propcard.container}>
+      <div className={styles.propcard.left}>
         {properties.map((properties, i) => (
           <ul className={styles.propcard} key={i}>
             <div className={styles.propcard.itemse}>
@@ -25,6 +26,12 @@ function VacationRental({properties}) {
             </div >
           </ul>
         ))}
+      </div>
+      <div className={styles.propcard.right}>
+      <div className={styles.propcard}>
+        <p>My name is Ramakanth</p>
+      </div>
+      </div>
       </div>
     </>
   )
